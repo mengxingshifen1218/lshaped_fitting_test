@@ -23,6 +23,7 @@ void ShowLShapeFittingResult(cv::Mat& disMap,
     cv::circle(disMap, resultPoints[i], 5, Scalar(0, 0, 255), -1);
   }
   cv::imshow("disMap", disMap);
+  cv::imwrite("../result/disMap.jpg", disMap);
 	cv::waitKey(0);
 }
 
